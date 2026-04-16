@@ -23,15 +23,11 @@ public class HelloWorld extends HttpServlet {
         
         out.println("<!DOCTYPE html>");
         out.println("<html>");
-        out.println("<head><title>Users List</title></head>");
-
-
-        out.println("<link rel=\"stylesheet\" href=\"css/styles.css\">");
-        
+        out.println("<head><link rel=\"stylesheet\" href=\"css/styles.css\"><title>Users List</title></head>");
         
         out.println("<body>");
         
-        out.println("<h1>Users from Database</h1>");
+        out.println("<h1 class='otherclass'>Users from Database</h1>");
         out.println("<table border='1'>");
         out.println("<tr><th>ID</th><th>Name</th><th>Description</th><th>Action</th></tr>");
 
@@ -65,12 +61,14 @@ public class HelloWorld extends HttpServlet {
 
         out.println("</table>");
 
-        out.println("<h2>Add new user</h2>");
-        out.println("<form method='POST' action='/hello'>");
+        out.println("<div class='add-user-div'>");
+        out.println("<h2 class='add-user-h2'>Add new user</h2>");
+        out.println("<form class='new-user-form' method='POST' action='/hello'>");
         out.println("Name: <input type='text' name='name' required><br><br>");
         out.println("Description: <input type='text' name='description' required><br><br>");
         out.println("<button type='submit'>Add</button>");
         out.println("</form>");
+        out.println("</div>");
 
         out.println("</body>");
         out.println("</html>");
