@@ -25,6 +25,9 @@ public class HelloWorld extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head><title>Users List</title></head>");
+
+
+        out.println("<link rel=\"stylesheet\" href=\"css/styles.css\">");
         
         
         out.println("<body>");
